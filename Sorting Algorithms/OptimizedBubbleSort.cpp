@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int n,temp;
-	bool sorted=false;
+	bool sorted;
 	cout<<"enter the no. of elements=";
 	cin>>n;
 	int array[n];
@@ -17,6 +17,7 @@ int main()
 	cout<<endl;
 	for(int i=0;i<n-1;i++)
 	{	
+		sorted=false;
 		for(int j=0;j<n-1-i;j++)
 		{	
 			// if array is already sorted then
