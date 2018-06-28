@@ -47,7 +47,7 @@ int partition(int *temp,int p,int r)
 	}
 	i++;
 	swap(temp,i,r);
-	return r;
+	return i;
 }
 void swap(int *temp,int x,int y)
 {
