@@ -137,7 +137,7 @@ void printvalues(struct node *root,int a[],int top)
 	// I am giving 0 to left and 1 to right
 	// this convention may vary and there could be different answers
 
-	// now we shall treverse the tree atop to bottom and left to right and when we reach at leaf then
+	// now we shall treverse the tree from top to bottom and left to right and when we reach at leaf then
 	// we shall print the content of our array a that contains code
 	// it will be better if you take pen and paper and make a stack and see how this top variable is changing
 	if(root->left!=NULL)
