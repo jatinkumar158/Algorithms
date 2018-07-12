@@ -14,7 +14,7 @@ struct node
 int n,heapsize;
 bool visited[100];
 int visitedDistance[100];
-struct node *heap[10];
+struct node *heap[100];
 void dijkstras(int*,int);
 void buildheap();
 void minheapify(int);
