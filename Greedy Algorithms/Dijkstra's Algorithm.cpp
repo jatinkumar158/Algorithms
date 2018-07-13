@@ -14,11 +14,11 @@ struct node
 int n,heapsize;
 bool visited[100];
 int visitedDistance[100];
-struct node *heap[100];
+struct node *heap[10];
 void dijkstras(int*,int);
 void buildheap();
 void minheapify(int);
-int source;
+int source,flag=0;
 struct node* extractmin();
 int main()
 {	
@@ -148,7 +148,20 @@ struct node* extractmin()
 	struct node *temp=heap[0];
 	visited[temp->number]=true;
 	visitedDistance[temp->number]=temp->distance;
-	cout<<source<<"-----"<<temp->number<<"   "<<temp->distance<<endl;
+	if(flag==0)
+	{
+		cout<<"\n\npath\tdistance\n";
+		flag=1;
+	}
+	cout<<source<<"-----"<<temp->number;
+	if((temp->distance==infinity || temp->distance<0))
+	{
+		cout<<"\t No path exists\n";
+	}
+	else
+	{
+		cout<<"\t   "<<temp->distance<<endl;
+	}
 	heap[0]=heap[heapsize-1];
 	heapsize--;
 	buildheap();
