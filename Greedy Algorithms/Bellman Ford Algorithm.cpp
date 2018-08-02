@@ -2,6 +2,7 @@
 // Bellman Ford Algorithm
 // based on greedy approach
 // Good results in case of negetive weight graphs
+// slower than Dijkstra's algorithm
 
 #include<iostream>
 #include<limits.h>
