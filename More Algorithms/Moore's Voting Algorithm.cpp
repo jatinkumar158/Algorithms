@@ -1,6 +1,6 @@
 // Implementer: Jatin Kumar
 // Problem: Given an array of size n.
-// find the element which occure more than n times
+// find the element which occure more than n/2 times
 // Moore's Voting Algorithm is used
 // Time Complexity: O(n)
 
