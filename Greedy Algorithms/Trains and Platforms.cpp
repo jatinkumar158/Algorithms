@@ -1,10 +1,15 @@
-/*Given arrival and departure times of all trains that reach a railway station, find the minimum number of platforms required for the railway station so that no train waits.
+/*
+
+Given arrival and departure times of all trains that reach a railway station, 
+find the minimum number of platforms required for the railway station so that no train waits.
 
 Input Format
 
 The first line of input consists of an integer N that represents total number of trains.
 
-The next N lines contain arrival Ta[i] and departure Td[i] time for each train. Time will be given given in 24H format and colons will be omitted for convinience. For ex.: 9:05AM will be given as "905", or 9:10PM will be given as "2110"
+The next N lines contain arrival Ta[i] and departure Td[i] time for each train. 
+Time will be given given in 24H format and colons will be omitted for convinience. 
+For ex.: 9:05AM will be given as "905", or 9:10PM will be given as "2110"
 
 Constrains:
 
